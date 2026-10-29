@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #a7e400;
+  /* --accent-dark: #a7e400; */
 }
 
 @theme inline {
@@ -10,12 +12,14 @@
   --color-foreground: var(--foreground);
   --font-bio-rhyme: var(--font-bio-rhyme);
   --font-poppins: var(--font-poppins);
+  --color-accent: var(--accent);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --accent: #a7e400;
   }
 }
 
