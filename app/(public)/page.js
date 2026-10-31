@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Trainers from "@/components/Trainers";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <About />
         <Trainers />
+        <WhyChooseUs />
       </main>
     </>
   );
