@@ -3,7 +3,7 @@ import ImagesGrid from "./ImagesGrid";
 const About = () => {
   return (
     <>
-      <section className="min-h-screen w-full bg-accent px-4 py-20 md:px-8 lg:px-16">
+      <section id="about" className="min-h-screen w-full bg-accent px-4 py-20 md:px-8 lg:px-16">
         <div className="info flex flex-col items-start gap-10 border-b border-background/80 pb-10">
           <h2 className="text-background text-3xl lg:text-[2.5rem] font-bio-rhyme font-bold">
             About Us

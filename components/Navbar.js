@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`${item.href === "#contact" ? "border border-zinc-500 bg-(--accent) hover:bg-transparent text-lg hover:text-foreground hover:scale-[1.1] active:scale-[0.9] text-zinc-950 rounded-full px-4 py-2 inline-flex items-center transition-all duration-300 ease-out md:ml-8 lg:ml-20" : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700/50 rounded-lg"} text-lg px-2 py-1 inline-flex items-center transition-all duration-300 ease-out`}
+                className={`${item.href === "#contact" ? "border border-zinc-500 bg-(--accent) hover:bg-transparent text-lg hover:text-foreground hover:scale-[1.1] active:scale-[0.9] text-zinc-950 rounded-full px-4 py-2 inline-flex items-center transition-all duration-300 ease-out md:ml-8 lg:ml-20" : "text-zinc-300 hover:text-zinc-200 hover:bg-zinc-700/50 rounded-lg"} text-lg px-2 py-1 inline-flex items-center transition-all duration-300 ease-out`}
               >
                 {item.name}
               </Link>
