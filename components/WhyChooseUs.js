@@ -75,24 +75,24 @@ const WhyChooseUs = () => {
           </div>
         </div>
         <div className="mt-10">
-            <h2 className="text-background mb-6 text-2xl lg:text-[2.25rem] font-bio-rhyme font-bold">
-                Our Numbers
-            </h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {stats.map((stat, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col items-start bg-background/80 gap-2 py-6 px-4 rounded-md"
-                    >
-                        <h3 className="text-foreground text-4xl font-bio-rhyme font-bold">
-                            {stat.value}
-                        </h3>
-                        <p className="text-foreground/75 text-lg font-bio-rhyme font-medium">
-                            {stat.title}
-                        </p>
-                    </div>
-                ))}
-            </div>
+          <h2 className="text-background mb-6 text-2xl lg:text-[2.25rem] font-bio-rhyme font-bold">
+            Our Numbers
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-start bg-background/80 gap-2 py-6 px-4 rounded-md"
+              >
+                <h3 className="text-foreground text-4xl font-bio-rhyme font-bold">
+                  {stat.value}
+                </h3>
+                <p className="text-foreground/75 text-lg font-bio-rhyme font-medium">
+                  {stat.title}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

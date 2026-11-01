@@ -4,7 +4,7 @@ const Trainers = () => {
   return (
     <section className="w-full overflow-hidden bg-background px-4 py-20 md:px-8 lg:px-16">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div className="mb-12 flex flex-col gap-10 border-b border-accent/30 pb-10">
           <h2 className="text-3xl lg:text-[2.5rem] font-bio-rhyme font-bold">
             OUR TRAINERS
           </h2>
@@ -13,7 +13,9 @@ const Trainers = () => {
             measurable results.
           </p>
         </div>
-        <TrainerCarousel />
+        <div className="mt-10">
+          <TrainerCarousel />
+        </div>
       </div>
     </section>
   );

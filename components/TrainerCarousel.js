@@ -204,6 +204,11 @@ const TrainerCarousel = () => {
   return (
     <div className="relative w-full " onFocus={handleFocus} onBlur={handleBlur}>
       {/* Carousel viewport */}
+
+      {/* Fade edges */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-background to-transparent md:w-28" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-background to-transparent md:w-28" />
+
       <div ref={emblaRef} className="overflow-hidden py-6">
         {/* Carousel container */}
         <div className="-ml-3 flex">
@@ -213,18 +218,7 @@ const TrainerCarousel = () => {
             return (
               <div
                 key={trainer.id}
-                className="
-                  min-w-0
-                  shrink-0
-                  grow-0
-                  basis-[78%]
-                  flex
-                  items-center
-                  gap-8
-                  sm:basis-[48%]
-                  lg:basis-[34%]
-                  xl:basis-[27%]
-                "
+                className="min-w-0 shrink-0 grow-0 basis-[78%] flex items-center gap-8 sm:basis-[48%] lg:basis-[34%] xl:basis-[27%]"
               >
                 <article
                   className={`
