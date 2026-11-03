@@ -37,6 +37,11 @@ const faqs = [
     answer:
       "Start by sending us an inquiry. Tell us about your goals and what you're looking for, and our team will help you determine the best way to begin your training at IRONVAULT.",
   },
+  {
+    id: 7,
+    question: "Do I need to book a tour in advance?",
+    answer: "Walk-ins are welcome, but booking ensures a trainer is available to show you around."
+  }
 ];
 
 const FAQ = () => {
