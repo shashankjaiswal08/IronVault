@@ -29,12 +29,12 @@ const CTA_Footer = () => {
   return (
     <>
       <section className="bg-accent font-bio-rhyme px-4 py-20 md:px-8 lg:px-16">
-        <div className="cta bg-background flex items-center justify-between rounded-xl p-10">
-          <div className="flex flex-col items-start gap-4 w-2/3">
+        <div className="cta bg-background flex flex-col lg:flex-row items-center justify-between rounded-xl px-4 py-8 lg:p-10">
+          <div className="flex flex-col items-start gap-4 lg:w-2/3 mb-5 lg:mb-0">
             <h2 className="text-foreground text-3xl lg:text-[2rem] font-bio-rhyme font-bold">
               Ready to get started?
             </h2>
-            <p className="text-foreground/75 font-bio-rhyme font-semibold">
+            <p className="text-foreground/65 font-bio-rhyme font-semibold">
               {`Become a member and take the first step towards a stronger, more confident you.`}
             </p>
           </div>
@@ -51,7 +51,7 @@ const CTA_Footer = () => {
         </div>
       </section>
       <footer className="bg-background font-bio-rhyme px-4 pt-20 md:px-8 lg:px-16">
-        <div className="flex items-center justify-start gap-12 border-b border-accent/50 pb-10">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-start gap-4 lg:gap-12 border-b border-accent/50 pb-10">
           <h2 className="text-accent text-3xl lg:text-[2.5rem] font-bio-rhyme font-bold">
             IronVault
           </h2>
@@ -59,24 +59,24 @@ const CTA_Footer = () => {
             {`IronVault is built for people who refuse to settle for ordinary. We believe strength is more than what you can lift.`}
           </p>
         </div>
-        <div className="footer-links mt-10 flex items-start justify-start gap-30 flex-wrap">
+        <div className="footer-links mt-10 flex items-start justify-start gap-10 lg:gap-30 flex-wrap">
           {footerLinks.map((section) => (
             <div
               key={section.category}
               className="flex flex-col items-start gap-4 transition-all duration-300 ease-in-out"
             >
-              <h3 className="text-foreground text-2xl font-bio-rhyme font-bold">
+              <h3 className="text-foreground text-lg lg:text-2xl font-bio-rhyme font-bold">
                 {section.category}
               </h3>
-              <ul className="flex flex-col items-start gap-2">
+              <ul className="flex flex-col items-start gap-2 -mt-1">
                 {section.links.map((link) => (
                   <li
                     key={link.name}
-                    className="group flex items-center justify-center text-foreground/65 text-lg font-bio-rhyme hover:scale-[1.1] transition-all duration-300 ease-in-out font-semibold"
+                    className="group flex items-center justify-center text-foreground/65 text-sm lg:text-lg font-bio-rhyme hover:scale-[1.1] transition-all duration-300 ease-in-out font-semibold"
                   >
                     <Link
                       href={link.href}
-                      className="group-hover:text-accent group-hover:underline group-hover:underline-offset-2 "
+                      className="group-hover:text-accent group-hover:underline group-hover:underline-offset-2"
                     >
                       {link.name}
                     </Link>
