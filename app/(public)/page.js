@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import CTA_Footer from "@/components/CTA&Footer";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
@@ -9,7 +10,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen flex flex-col">
+      <main className="relative min-h-screen flex flex-col">
         <Hero />
         <About />
         <Trainers />
@@ -17,6 +18,7 @@ export default function Home() {
         <Testimonials />
         <FAQ />
         <Contact />
+        <CTA_Footer />
       </main>
     </>
   );

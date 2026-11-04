@@ -1,11 +1,7 @@
 import Link from "next/link";
 import ContactForm from "./ContactForm";
 import { ArrowUpRight } from "lucide-react";
-import { Clock } from "lucide-react";
-import { Mail } from "lucide-react";
-import { MailQuestion } from "lucide-react";
-import { Locate } from "lucide-react";
-import { MapPin } from "lucide-react";
+import { Clock, MapPin, MailQuestion } from "lucide-react";
 
 export default function Contact() {
   return (

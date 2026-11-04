@@ -17,7 +17,7 @@ const navLinks = [
     href: "#trainers",
   },
   {
-    name: "Book A Demo",
+    name: "Contact Us",
     href: "#contact",
   },
 ];
