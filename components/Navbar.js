@@ -6,7 +6,6 @@ import { useGSAP } from "@gsap/react";
 import { RiArrowRightUpLine, RiCloseFill, RiMenu3Fill } from "react-icons/ri";
 import { AnimatePresence, motion } from "motion/react";
 
-
 const navLinks = [
   {
     name: "Home",
@@ -42,7 +41,7 @@ const menuLinksVariants = {
     transition: { staggerChildren: 0.1, staggerDirection: -1 },
   },
   open: {
-    transition: { delayChildren: 0.075, staggerChildren: 0.1 },
+    transition: { delayChildren: 0.25, staggerChildren: 0.1 },
   },
 };
 
@@ -56,7 +55,6 @@ const menuLinkVariants = {
 };
 
 gsap.registerPlugin(useGSAP);
-
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -106,15 +104,18 @@ const Navbar = () => {
           className="nav hidden md:flex items-center justify-between w-full md:px-8 lg:px-16 py-4"
         >
           <div className="logo">
-            <motion.h1 whileHover={{ scale: 1.05, color: "#a7e400" }} className="text-2xl font-bio-rhyme font-extrabold">
+            <motion.h1
+              whileHover={{ scale: 1.05, color: "#a7e400" }}
+              className="text-2xl font-bio-rhyme font-extrabold"
+            >
               <Link href="/">IronVault</Link>
             </motion.h1>
           </div>
-          <div className="links flex items-center justify-center gap-2 font-semibold font-bio-rhyme transition-all duration-300 ease-out">
+          <div className="links flex items-center justify-center gap-2 font-semibold font-bio-rhyme">
             {navLinks.map((item) => (
               <motion.div
                 key={item.name}
-                className={`link ${item.href === "#contact" ? "border border-zinc-500 bg-accent hover:bg-transparent text-lg hover:text-foreground active:scale-[0.9] text-zinc-950 rounded-full inline-flex items-center md:ml-8 lg:ml-20" : "text-zinc-300 hover:text-zinc-200 hover:bg-zinc-700/50 rounded-lg"} text-lg inline-flex items-center cursor-pointer relative`}
+                className={`link ${item.href === "#contact" ? "border border-zinc-500 bg-accent hover:bg-transparent text-lg hover:text-foreground text-zinc-950 rounded-full inline-flex items-center md:ml-8 lg:ml-20" : "text-zinc-300 hover:text-zinc-200 hover:bg-zinc-700/50 rounded-lg"} text-lg inline-flex items-center cursor-pointer relative`}
                 whileHover={
                   item.href === "#contact" ? { scale: 1.1 } : { scale: 1.05 }
                 }
@@ -142,9 +143,15 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Nav */}
-        <nav ref={mobileRef} className="mobileNav w-full flex items-center justify-between p-4 md:hidden">
+        <nav
+          ref={mobileRef}
+          className="mobileNav w-full flex items-center justify-between p-4 md:hidden"
+        >
           <div className="logo">
-            <motion.h1 whileTap={{ scale: 1.05, color: "#a7e400" }} className="text-xl font-bio-rhyme font-extrabold">
+            <motion.h1
+              whileTap={{ scale: 1.05, color: "#a7e400" }}
+              className="text-xl font-bio-rhyme font-extrabold"
+            >
               <Link href="/">IronVault</Link>
             </motion.h1>
           </div>
@@ -207,6 +214,9 @@ const Navbar = () => {
                     <motion.div
                       key={item.name}
                       variants={menuLinkVariants}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
                       className="link w-full"
                     >
                       <Link

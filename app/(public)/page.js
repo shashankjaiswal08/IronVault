@@ -10,7 +10,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export default function Home() {
   return (
     <>
-      <main className="relative min-h-screen flex flex-col">
+      <main className="relative overflow-x-hidden min-h-screen flex flex-col">
         <Hero />
         <About />
         <Trainers />
